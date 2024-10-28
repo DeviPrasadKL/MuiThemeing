@@ -57,8 +57,8 @@ export default function App(props) {
               m: 'auto',
             }}
           >
-            <Sample/>
-            {/* <SigninCard/> */}
+            {/* <Sample/> */}
+            <SigninCard/>
           </Stack>
         </Stack>
       </Stack>
