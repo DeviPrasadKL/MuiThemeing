@@ -4,6 +4,7 @@ import Stack from '@mui/material/Stack';
 import AppTheme from './theme/AppTheme';
 import ColorModeSelect from './theme/ColorModeSelect';
 import Sample from './Components/Sample';
+import SigninCard from './SignInCard'
 
 export default function App(props) {
   return (
@@ -57,6 +58,7 @@ export default function App(props) {
             }}
           >
             <Sample/>
+            {/* <SigninCard/> */}
           </Stack>
         </Stack>
       </Stack>

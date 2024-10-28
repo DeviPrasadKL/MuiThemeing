@@ -5,6 +5,7 @@ import AccordionSummary from '@mui/material/AccordionSummary';
 import AccordionDetails from '@mui/material/AccordionDetails';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import Button from '@mui/material/Button';
+import { Box, OutlinedInput, Paper } from '@mui/material';
 
 export default function Sample() {
     return (
@@ -15,7 +16,7 @@ export default function Sample() {
                     aria-controls="panel1-content"
                     id="panel1-header"
                 >
-                    Accordion 1
+                    Accordion One
                 </AccordionSummary>
                 <AccordionDetails>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
@@ -28,7 +29,7 @@ export default function Sample() {
                     aria-controls="panel2-content"
                     id="panel2-header"
                 >
-                    Accordion 2
+                    Accordion Two 
                 </AccordionSummary>
                 <AccordionDetails>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
@@ -52,6 +53,21 @@ export default function Sample() {
                     <Button>Agree</Button>
                 </AccordionActions>
             </Accordion>
+
+            <Paper maxWidth='20rem'>
+                <OutlinedInput
+                    autoFocus
+                    required
+                    margin="dense"
+                    id="email"
+                    name="email"
+                    label="Email address"
+                    placeholder="Email address"
+                    type="email"
+                    fullWidth
+                />
+                <Button variant='contained'>Login</Button>
+            </Paper>
         </div>
     )
 }
